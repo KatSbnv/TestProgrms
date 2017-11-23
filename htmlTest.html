@@ -1,0 +1,211 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<title>Title</title>-->
+
+</head>
+<body>
+<script>
+    'use strict'
+
+    //    var number = 0;
+    //    while (number < 100) {
+    //        number = prompt(' Enter number', '');
+    //        if (number >= 100) break;
+    //        number++;
+    //    }
+    //    alert('Right!');
+    //
+    //var browser = prompt(' Ensert name');
+    //    if (browser=='IE'){ alert('oh, really? ');}
+    //    else if ((browser=='Chrome')||(browser==' Firefox')||(browser=='Opera'))
+    //    {alert( ' Yeap, we got it');}
+    //    else {alert(' We hope everything is allright with your head...');}
+
+
+    //
+    //    var a = +prompt('a?', '');
+    //
+    //    switch (a){
+    //
+    //        case 0:
+    //            alert('0')
+    //            break;
+    //
+    //        case 1:
+    //            alert('1')
+    //            break;
+    //
+    //        case 2:
+    //        case 3:
+    //            alert('2,3');
+    //            break;
+    //        default:
+    //            alert('wrong number');
+    //
+    //    }
+
+    //    function checkAge(age) {
+    //        if (age > 18) {
+    //            return true;
+    //        }
+    //        else {
+    //            return confirm('Have you parents\' permission?');
+    //        }
+    //
+    //    }
+    //
+    //    var age = prompt('Your age?');
+    //    if (checkAge(age)) {
+    //        alert(' Go on');
+    //    }
+    //    else {
+    //        alert(' Forbidden!');
+    //    }
+    //
+    //function checkAge(age) { (age > 18) ? true : confirm('par permission?');
+    //
+    //}
+    //
+
+    //
+    // function min(a, b) {
+    //        if (a > b)
+    //        {return b;}
+    //else {return a; }
+    // }
+    //
+    // var number = p
+    //    alert(min(2,5));
+    //    alert(min(3,-1));
+    //    alert(min(1,1));
+    //    alert(min(8,4));
+
+
+    //    function pow(x, n) {
+    //        var result = x;
+    //        var i;
+    //        for (i = 1; i < n; i++) {
+    //            result *= x;
+    //        }
+    //         return result;
+    //    }
+    //
+    //
+    //
+    //    var x = prompt(' Enter X', ' ');
+    //    var n = prompt(' Enter N', ' ');
+    //
+    //    if (n <= 1) {
+    //        alert('Error! Enter another number')
+    //    }
+    //    else {
+    //        alert(pow(x, n));
+    //    }
+
+    //
+    //    var firstNumber = +prompt('Enter first number');
+    //    var secondNumber = +prompt(' Enter second number');
+    //
+    //    alert( firstNumber + secondNumber);
+
+    //    var person = {};
+    //    person.age = 25;
+    //    var key = 'age';
+    //
+    //    alert( person[key] );
+    //
+
+
+    // BAG!!!
+
+
+    //var number = [];
+    //
+    //    while (true){
+    //
+    //        var value = prompt(" Enter number ", " ");
+    //
+    //        if (value === ""|| value === 0|| isNaN(value))break;
+    //
+    //        number.push(+value);
+    //    }
+    //
+    //    var sum = 0;
+    //
+    //    for (var i = 0; i < number.length; i++) {
+    //
+    //        sum += number[i];
+    //    }
+    //
+    //alert(sum);
+
+    //
+    //
+    //
+    //    var arr = [];
+    //    var summ = 0;
+    //    while(true){
+    //        var num = prompt("Укажите число", 0);
+    //        arr.push(+num);
+    //        if(!num){
+    //            for(var i = 0; i < arr.length; i++){
+    //                summ += arr[i];
+    //            }
+    //            alert(summ);
+    //            break;
+    //        }
+    //    }
+
+    //ищет значения в массиве с пом спец функции
+
+    //
+    //    function find(array, value) {
+    //        if (array.indexOf) { // если метод существует
+    //            return array.indexOf(value);
+    //        }
+    //
+    //        for (var i = 0; i < array.length; i++) {
+    //            if (array[i] === value) return i;
+    //        }
+    //
+    //        return -1;
+    //    }
+    //
+    //    var arr = ["a", -1, 2, "b"];
+    //
+    //    var index = find(arr, 2);
+    //
+    //    alert( index );
+
+
+
+    //    var arr = ["I", "learn", "js"];
+    //
+    //    arr.slice(2, 0, "very" , "hard");
+    //
+    //    alert(arr);
+
+
+    function camelize(str) {
+        var array = str.split('-');
+
+        for (var i = 1; 1 < array.length; i++){
+            array[i] = array[i].charAt(0).toUpperCase() + array[i].slice(1);
+        }
+        return array.join('');
+    }
+
+    alert(camelize("background-color"));
+    alert(camelize("background-color"));
+    alert(camelize("background-color"));
+
+
+
+</script>
+
+</body>
+</html>
